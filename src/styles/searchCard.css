@@ -1,0 +1,114 @@
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input Field & Button & Title */
+
+.title {
+    font-size: 4rem;
+    color: #fff;
+
+
+    background: #3E48FF;
+    background: linear-gradient(to right, #3E48FF 0%, #FF8BDA 65%);
+    border-radius: 20px;
+
+    padding: 1rem;
+}
+
+.inputButtonSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    align-self: center;
+}
+
+.inputField {
+    padding: 0.6rem;
+    margin: 0;
+    width: 70%;
+
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+.buttonSubmit {
+    margin: 0;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 7.5%;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.buttonSubmit:hover {
+    color: #fff;
+}
+
+button:focus, button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+/* Card */
+
+.cardResults {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.cardSingle {
+    background-color: lightgray;
+
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+    padding: 1rem;
+    margin: 1.5rem;
+
+    border-radius: 20px;
+}
+
+/* Card Name */
+.cardTitle {
+    padding: 0;
+    margin: 1rem 0 0 0;
+
+    color: #fff;
+}
+
+/* Rarity */
+.rarity {
+    /* background-color: #000; */
+    
+    align-self: center;
+
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+/* Price */
+.price {
+    color: white;
+}
