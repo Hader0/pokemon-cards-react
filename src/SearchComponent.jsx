@@ -18,7 +18,9 @@ function SearchCard() {
         let data = await response.json();
 
         // Set the new cards data to the state
-        setNewCards(data.data);  // Assuming the cards are inside the 'data' property
+        setNewCards(data.data);  
+        // Set the input field (search) to empty
+        setSearch("");
 
         console.log(newCards);
 
