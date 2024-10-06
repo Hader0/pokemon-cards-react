@@ -12,10 +12,10 @@
     font-size: 4rem;
     color: #fff;
 
-
     background: #3E48FF;
     background: linear-gradient(to right, #3E48FF 0%, #FF8BDA 65%);
     border-radius: 20px;
+    border: 1px solid hsla(0, 100%, 100%, 1);
 
     padding: 1rem;
 }
@@ -26,7 +26,9 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 100%;
+    margin-bottom: 1rem;
+
+    width: 80%;
 
     align-self: center;
 }
@@ -43,6 +45,12 @@
     font-family: inherit;
     background-color: #1a1a1a;
     cursor: pointer;
+    
+    transition: 0.5s ease;
+}
+
+.inputField:hover {
+    border-color: #fff;
 }
 
 .buttonSubmit {
@@ -55,11 +63,12 @@
     font-family: inherit;
     background-color: #1a1a1a;
     cursor: pointer;
-    transition: border-color 0.25s;
+    
+    transition: 0.5s ease;
 }
 
 .buttonSubmit:hover {
-    color: #fff;
+    border-color: #fff;
 }
 
 button:focus, button:focus-visible {
@@ -78,7 +87,8 @@ button:focus, button:focus-visible {
 }
 
 .cardSingle {
-    background-color: lightgray;
+    background-color: #35353554;
+    border: 3px solid #505050;
 
     display: flex;
     flex-direction: column;
