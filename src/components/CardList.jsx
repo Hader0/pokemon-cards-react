@@ -19,7 +19,7 @@ function CardList({ newCards }) {
                 )}
             </div>
         ));
-    } else {
+    } else { // For when  there are no objects in the newCards (state) array
         return (
             <h4 className="invalidEntry">
                 TIP: You have not entered a valid Pokémon, please make sure that only alphanumeric characters are being used...

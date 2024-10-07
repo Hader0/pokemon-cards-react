@@ -85,32 +85,35 @@ function SearchCard() {
 
     return (
         <>
-            {/* Page title */}
-            <div className="titleCard">
-                <h1 className="titleCardText">Pokemon Trading Cards</h1>
-            </div>
-            <div className="inputButtonSection">
+            <div className="titleSearchComponent">
+                {/* Page title */}
+                <div className="titleCard">
+                    <h1 className="titleCardText">Pokemon Trading Cards</h1>
+                </div>
+                <div className="inputButtonSection">
 
-                {/* Input field */}
-                <input
-                    className="inputField"
-                    type="text" 
-                    placeholder="Enter a Pokemon..." 
-                    value={search}
-                    onKeyPress={handleKeyPress} // Detect Enter key press
-                    onChange={handleInputChange}
-                />
-                {/* Submit button */}
-                <button className="buttonSubmit" onClick={addCards}>Search</button>
+                    {/* Input field */}
+                    <input
+                        className="inputField"
+                        type="text" 
+                        placeholder="Enter a Pokemon..." 
+                        value={search}
+                        onKeyPress={handleKeyPress} // Detect Enter key press
+                        onChange={handleInputChange}
+                    />
+                    <div className="submitFilterButtons">
+                        {/* Submit button */}
+                        <button className="buttonSubmit" onClick={addCards}>Search</button>
 
-                 {/* Filter dropdown */}
-                 <select className="filterSelect" value={filter} onChange={handleFilterChange}>
-                    <option value="">Filter By</option>
-                    <option value="price">Price</option>
-                    <option value="alphabetical">Alphabetical</option>
-                    <option value="rarity">Rarity</option>
-                </select>
-
+                        {/* Filter dropdown */}
+                        <select className="filterSelect" value={filter} onChange={handleFilterChange}>
+                            <option value="">Filter</option>
+                            <option value="price">Price</option>
+                            <option value="alphabetical">Name</option>
+                            <option value="rarity">Rarity</option>
+                        </select>
+                    </div>
+                </div>
             </div>
                 
             
@@ -124,6 +127,5 @@ function SearchCard() {
         </>
     )
 }
-{/* filter={filter} */}
 
 export default SearchCard;
