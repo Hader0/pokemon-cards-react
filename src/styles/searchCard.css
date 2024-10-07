@@ -144,6 +144,20 @@
     font-weight: bold;
 }
 
+/* Reference */
+
+.reference {
+    color: #ffffffc0;
+    background-color: #1b1b1bd3;
+
+    font-size: 0.9rem;
+    padding: 0.3rem;
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
 
 
 /* For Mobile */
@@ -168,13 +182,13 @@
     }
 
     .inputField {
-        width: 90%;
+        width: 95%;
         margin-bottom: 1rem;
         font-size: 1rem;
     }
 
     .buttonSubmit {
-        width: 95%;
+        width: 100%;
         padding: 0.8rem;
     }
 
@@ -206,10 +220,24 @@
     .invalidEntry {
         font-size: 0.75rem;
         padding: 0.25rem;
+        max-width: 75%;
     }
 
     /* Loading */
     .loading {
         font-size: 1.2rem;
     }
+
+    /* Reference */
+    .reference {
+        color: #ffffffc0;
+        background-color: #1b1b1bd3;
+
+        font-size: 0.7rem;
+        padding: 0.1rem;
+
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+}
 }

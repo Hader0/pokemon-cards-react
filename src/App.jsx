@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <SearchCard />
+      <a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons" className='reference'>Pokemon Icon Created by Roundicons Freebies - Flaticon</a>
     </>
   )
 }
