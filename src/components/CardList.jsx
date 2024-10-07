@@ -24,7 +24,7 @@ function CardList({newCards}) {
     } else {
         if (newCards.length == 0) {
             console.log("No Pokemon Cards...");
-            return <h4 className="invalidEntry">You have not entered a Pokemon, please make sure alphanumeric characters are being used...</h4>
+            return <h4 className="invalidEntry">TIP: You have not entered a valid Pokemon, please make sure that only alphanumeric characters are being used...</h4>
         } else {
             <h3>Invalid characters being used...</h3>
         }
