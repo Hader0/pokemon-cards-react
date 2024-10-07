@@ -1,6 +1,4 @@
-
-
-function CardList({newCards}) {
+function CardList({ newCards }) {
     if (newCards.length > 0) {
         return newCards.map((card, index) => (
             <div key={index} className="cardSingle">
@@ -22,13 +20,11 @@ function CardList({newCards}) {
             </div>
         ));
     } else {
-        if (newCards.length == 0) {
-            console.log("No Pokemon Cards...");
-            return <h4 className="invalidEntry">TIP: You have not entered a valid Pokemon, please make sure that only alphanumeric characters are being used...</h4>
-        } else {
-            <h3>Invalid characters being used...</h3>
-        }
-        
+        return (
+            <h4 className="invalidEntry">
+                TIP: You have not entered a valid Pokémon, please make sure that only alphanumeric characters are being used...
+            </h4>
+        );
     }
 }
 
