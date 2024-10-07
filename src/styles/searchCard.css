@@ -4,20 +4,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 0;
 }
 
 /* Input Field & Button & Title */
 
-.title {
-    font-size: 4rem;
+.titleCard {
     color: #fff;
-
     background: #3E48FF;
     background: linear-gradient(to right, #3E48FF 0%, #FF8BDA 65%);
     border-radius: 20px;
-    border: 1px solid hsla(0, 100%, 100%, 1);
 
     padding: 1rem;
+    margin: 2rem;
+}
+
+.titleCardText {
+    font-size: 3.5rem;
+    text-shadow: 3px 2px 2px #000000;
 }
 
 .inputButtonSection {
@@ -71,10 +76,6 @@
     border-color: #fff;
 }
 
-button:focus, button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
-
 
 /* Card */
 
@@ -121,4 +122,24 @@ button:focus, button:focus-visible {
 /* Price */
 .price {
     color: white;
+}
+
+.priceNull {
+    color: #ff3030;
+}
+
+/* Invalid Entry */
+
+.invalidEntry {
+    color: #ff3a20be;
+    font-style: italic;
+}
+
+/* Loading */
+
+.loading {
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
