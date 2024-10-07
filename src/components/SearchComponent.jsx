@@ -45,6 +45,13 @@ function SearchCard() {
         console.log(newCards);
     }
 
+    // Handle Enter key press on input field
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            addCards();  // Call addCards function when Enter is pressed
+        }
+    }
+
     return (
         <>
             {/* Page title */}
@@ -59,6 +66,7 @@ function SearchCard() {
                     type="text" 
                     placeholder="Enter a Pokemon..." 
                     value={search}
+                    onKeyPress={handleKeyPress} // Detect Enter key press
                     onChange={handleInputChange}
                 />
                 {/* Submit button */}
