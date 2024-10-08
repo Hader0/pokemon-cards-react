@@ -89,10 +89,35 @@
     background-color: #1a1a1a;
     cursor: pointer;
     transition: 0.5s ease;
+
+    -webkit-appearance: initial;
+    text-align: center;
 }
 
 .filterSelect:hover {
     border-color: #fff;
+}
+
+/* Price & Favourite Icon */
+.priceFavourite {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceFavourite h4 {
+    /* font-size: 10px; */
+}
+
+.favourite {
+    width: 40px;
+}
+.favourite:hover {
+    border: yellow;
 }
 
 /* Card Results */
@@ -138,14 +163,6 @@
     color: #ff7c7cda;
     animation-name: appear;
     animation-duration: 0.8s;
-}
-
-/* For Chrome & Safari (Select button styling wasn't working on safari for mobile  */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    .filterSelect {
-        -webkit-appearance: initial;
-        text-align: center;
-    }
 }
 
 /* For Mobile */
@@ -212,7 +229,7 @@
     }
 
     .cardSingle {
-        width: 50%;
+        width: 70%;
         height: fit-content;
         margin: 1rem 0;
         padding: 0.25rem 2rem;
