@@ -178,9 +178,7 @@
     }
 
     .submitFilterButtons {
-        width: 80%;
-        max-height: 50%;
-        flex-direction: row;
+        width: 100%;
         justify-content: space-evenly;
     }
 
@@ -188,12 +186,14 @@
     .buttonSubmit {
         /* width: 48%; */
         padding: 0.8rem;
+        width: 40%;
     }
 
     /* Select Dropdown */
     .filterSelect {
         /* width: 48%; */
         padding: 0.8rem;
+        width: 40%;
     }
 
     /* Card Results */
