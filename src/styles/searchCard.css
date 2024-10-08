@@ -83,7 +83,7 @@
     margin: 0;
     border-radius: 8px;
     border: 1px solid transparent;
-    padding: 1rem !important;
+    padding: 1rem;
     font-size: 1em;
     font-weight: 500;
     background-color: #1a1a1a;
@@ -144,7 +144,7 @@
 @media (max-width: 768px) {
 
     .titleSearchComponent {
-        min-width: 80%;
+        width: 80%;
     }
     /* Title Card */
     .titleCard {
@@ -164,7 +164,7 @@
 
     /* Input and Button Section */
     .inputButtonSection {
-        width: 100%;
+        min-width: 100%;
         flex-direction: column;
     }
 
@@ -187,7 +187,6 @@
     /* Submit Button */
     .buttonSubmit {
         /* width: 48%; */
-        margin-bottom: 0;
         padding: 0.8rem;
     }
 
