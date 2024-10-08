@@ -101,8 +101,8 @@
 /* Price & Favourite Icon */
 .priceFavourite {
     display: flex;
-    justify-content: space-around; /* Align price and star icon next to each other */
-    align-items: center;  /* Vertically center the price and star icon */
+    justify-content: space-around;
+    align-items: center;
     margin-top: 0.5rem;
 }
 
@@ -110,7 +110,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
-    margin-right: 10px;  /* Add space between the price and the icon */
+    margin-right: 10px;
 }
 
 .priceNull {
@@ -119,15 +119,30 @@
 }
 
 .favouriteIcon {
-    width: 35px;  /* Set the size of the icon */
+    width: 35px;
     height: 35px;
     cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .favouriteIcon:hover {
-    transform: scale(1.2);  /* Slightly enlarge the icon on hover */
-    filter: drop-shadow(0px 0px 8px #FFD700);  /* Add a golden glow effect on hover */
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 8px #FFD700);
+}
+
+.favouriteButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* .favouriteActive .favouriteIcon {
+    filter: drop-shadow(0px 0px 10px yellow);
+} */
+
+.favouriteButton:hover .favouriteIcon {
+    content: url('../assets/star2.png'); /* Change to star.png */
 }
 
 /* Card Results */
