@@ -88,6 +88,9 @@
     font-weight: 500;
     background-color: #1a1a1a;
     cursor: pointer;
+
+    -webkit-appearance: initial;
+
     transition: 0.5s ease;
 }
 
@@ -243,11 +246,5 @@
         width: 100%;
         position: fixed;
         bottom: 0;
-    }
-}
-
-@media not all and (max-height: 899px) and (min-resolution:.1dpi) {
-    .filterSelect {
-    -webkit-padding-after: 1.7rem;
     }
 }
