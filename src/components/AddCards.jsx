@@ -4,7 +4,7 @@ async function addCards(search, setNewCards, setIsLoading, setSearchSubmitted, s
 
     console.log(search);
 
-    const regex = /^[a-zA-Z0-9]*$/; // Alphanumeric characters
+    const regex = /^[a-zA-Z0-9 '-]*$/; // Accepted characters
 
     // Fetching Pokemon Cards from user input text - "search"
     if (regex.test(search) && search != ""){ // Testing to make sure only regex characters are being used
@@ -26,7 +26,6 @@ async function addCards(search, setNewCards, setIsLoading, setSearchSubmitted, s
     }
 
     setSearchSubmitted(true); 
-    console.log(newCards);
 }
 
 export default addCards;
