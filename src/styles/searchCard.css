@@ -100,24 +100,34 @@
 
 /* Price & Favourite Icon */
 .priceFavourite {
-    width: 100%;
-    height: fit-content;
-
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around; /* Align price and star icon next to each other */
+    align-items: center;  /* Vertically center the price and star icon */
+    margin-top: 0.5rem;
 }
 
-.priceFavourite h4 {
-    /* font-size: 10px; */
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px;  /* Add space between the price and the icon */
 }
 
-.favourite {
-    width: 40px;
+.priceNull {
+    font-size: 1rem;
+    color: #ff7c7c;
 }
-.favourite:hover {
-    border: yellow;
+
+.favouriteIcon {
+    width: 35px;  /* Set the size of the icon */
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.favouriteIcon:hover {
+    transform: scale(1.2);  /* Slightly enlarge the icon on hover */
+    filter: drop-shadow(0px 0px 8px #FFD700);  /* Add a golden glow effect on hover */
 }
 
 /* Card Results */

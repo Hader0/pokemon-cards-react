@@ -34,11 +34,19 @@ function CardList({ newCards }) {
                             <img
                                 src={hoveredCardIndex === index ? starIcon2 : starIcon} // Check if the current card is being hovered
                                 alt="Favourite"
-                                className="favourite"
+                                className="favouriteIcon"
                             />
                         </>
                     ) : (
-                        <h4 className="priceNull">Price Not Available</h4>
+                        <>
+                            <h4 className="priceNull">Price Not Available</h4>
+                            {/* Display different star icon depending on hover state */}
+                            <img
+                            src={hoveredCardIndex === index ? starIcon2 : starIcon} // Check if the current card is being hovered
+                            alt="Favourite"
+                            className="favouriteIcon"
+                            />
+                        </>
                     )}
                 </div>
             </div>
