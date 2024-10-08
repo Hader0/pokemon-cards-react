@@ -89,7 +89,7 @@
     background-color: #1a1a1a;
     cursor: pointer;
 
-    -webkit-appearance: menulist-button;
+    -webkit-appearance:inherit;
 
     /* text-indent: 0px;
     line-height: 20px; */
