@@ -180,19 +180,19 @@
     .submitFilterButtons {
         width: 80%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     /* Submit Button */
     .buttonSubmit {
-        width: 48%;
+        /* width: 48%; */
         margin-bottom: 0;
         padding: 0.8rem;
     }
 
     /* Select Dropdown */
     .filterSelect {
-        width: 48%;
+        /* width: 48%; */
         padding: 0.8rem;
     }
 
