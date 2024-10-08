@@ -88,12 +88,6 @@
     font-weight: 500;
     background-color: #1a1a1a;
     cursor: pointer;
-
-    -webkit-appearance:inherit;
-
-    /* text-indent: 0px;
-    line-height: 20px; */
-
     transition: 0.5s ease;
 }
 
@@ -144,6 +138,14 @@
     color: #ff7c7cda;
     animation-name: appear;
     animation-duration: 0.8s;
+}
+
+/* For Chrome & Safari (Select button styling wasn't working on safari for mobile  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .filterSelect {
+        -webkit-appearance: initial;
+        text-align: center;
+    }
 }
 
 /* For Mobile */
