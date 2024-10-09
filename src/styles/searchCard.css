@@ -43,6 +43,7 @@
     border-radius: 8px;
     border: 1px solid transparent;
     font-size: 1em;
+    color: rgba(255, 255, 255, 0.75);
     font-weight: 500;
     background-color: #1a1a1a;
     transition: 0.5s ease;
