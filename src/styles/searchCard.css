@@ -219,9 +219,9 @@
     background-color: #1b1b1bd3;
     font-size: 1rem;
     font-weight: 700;
-    padding: 0.5rem;
+    padding: 0.5rem 20% 0.5rem 20%;
     margin: 0;
-    width: 100%;
+    width: 80%;
 
     position: fixed;
     bottom: 0;
@@ -348,9 +348,6 @@
         background-color: #1b1b1bd3;
     
         font-size: 0.7rem;
-        padding: 0.1rem;
-    
-        width: 100%;
         position: fixed;
         bottom: 0;
     }
