@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import '../styles/searchCard.css';
+import starIcon2 from '../assets/star2.png';
 
 import CardList from './CardList';
 import addCards from "./AddCards";
@@ -51,6 +52,13 @@ function SearchCard() {
 
     return (
         <>
+            <div className="favouriteSection">
+                    <button className="favouriteCardsButton">
+                        <img src={starIcon2} alt="Favourite Star" />
+                    </button>
+                
+            </div>
+
             <div className="titleSearchComponent">
                 <div className="titleCard">
                     <h1 className="titleCardText">Pokemon Trading Cards</h1>

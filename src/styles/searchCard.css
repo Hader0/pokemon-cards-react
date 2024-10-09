@@ -7,6 +7,43 @@
     max-width: 100%;
 }
 
+/* Favourite Cards Section */
+
+.favouriteSection {
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.favouriteCardsButton {
+    background-color: #1a1a1a;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    margin-bottom: 0.7rem;
+    transition: 0.5s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favouriteCardsButton:hover {
+    border-color: #1a1a1a;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 4px #ffc815);
+}
+
+.favouriteCardsButton img {
+    width: 35px;
+    height: 35px;
+}
+
 /* Input Field & Button, Filter & Title */
 
 .titleSearchComponent {
@@ -20,7 +57,7 @@
     background-color: #1a1a1a;
     border-radius: 20px;
     padding: 1rem;
-    margin: 2rem;
+    margin: 0rem 2rem 2rem 2rem;
 }
 
 .titleCardText {
@@ -96,9 +133,9 @@
     color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
     transition: 0.5s ease;
+    text-align: center;
 
     -webkit-appearance: initial;
-    text-align: center;
 }
 
 .filterSelect:hover {
@@ -206,16 +243,26 @@
 /* For Mobile */
 @media (max-width: 768px) {
 
+    /* Favourite Cards Section/Button */
+    .favouriteSection {
+        justify-content: center;
+    }
+    
+    .favouriteCardsButton {
+        margin-bottom: 01rem;
+    }
+
+    /* Title Card */
     .titleSearchComponent {
         min-width: 80%;
     }
-    /* Title Card */
+
     .titleCard {
         margin: 1rem;
         padding: 0.75rem;
         max-width: 100%;
         margin: 0;
-        margin-top: 2rem;
+        margin-top: 0rem;
 
         align-self: center;
     }

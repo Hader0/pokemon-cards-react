@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <SearchCard />
-      <p className='reference'>Created by Hayden Bradford - Copyright © 2024 | <a href="https://www.flaticon.com/free-icons/pokemon">Pokemon Icon Created by Roundicons Freebies - Flaticon</a></p>
+      <p className='reference'>Created by Hayden Bradford 🤍 Copyright © 2024 | <a href="https://www.flaticon.com/free-icons/pokemon">Pokemon Icon Created by Roundicons Freebies - Flaticon</a></p>
     </>
   )
 }
