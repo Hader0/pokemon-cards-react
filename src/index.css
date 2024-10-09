@@ -34,10 +34,10 @@ h1 {
   line-height: 1.1;
 }
 
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+a:hover {
+  color: #747bff;
 }
+button {
+  background-color: #f9f9f9;
+}
+
