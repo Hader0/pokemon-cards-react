@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import starIcon from '../assets/star.png';
 import starIcon2 from '../assets/star2.png';
 
@@ -10,18 +10,21 @@ function CardList({ newCards }) {
     const handlefavouriteClick = (card) => {
         setFavouriteCards((prevfavourites) => {
             // Check if the card is already in the favourites
-            const isfavourite = prevfavourites.some(favCard => favCard.id === card.id);
+            const isFavourite = prevfavourites.some(favCard => favCard.id === card.id);
 
             // If already favourite, remove it, otherwise, add it
-            if (isfavourite) {
-                console.log(favouriteCards);
+            if (isFavourite) {
                 return prevfavourites.filter(favCard => favCard.id !== card.id);
             } else {
-                console.log(favouriteCards);
                 return [...prevfavourites, card];
             }
         });
     };
+
+    // Log favouriteCards state after it's updated
+    useEffect(() => {
+        console.log("Updated Favourite Cards:", favouriteCards);
+    }, [favouriteCards]); // The effect runs whenever favouriteCards changes
 
     if (newCards.length > 0) {
         return newCards.map((card, index) => {
@@ -62,7 +65,22 @@ function CardList({ newCards }) {
 
                             </>
                         ) : (
-                            <h4 className="priceNull">Price Not Available</h4>
+                            <>
+                                <h4 className="priceNull">Price Not Available</h4>
+
+                                <button
+                                    className={`favouriteButton ${isFavourite ? 'favouriteActive' : ''}`}
+                                    onMouseOver={() => setMouseOver(index)} 
+                                    onMouseOut={() => setMouseOver(null)}
+                                    onClick={() => handlefavouriteClick(card)} // Click to toggle favourite
+                                >
+                                <img 
+                                    src={mouseOver === index ? starIcon : (isFavourite ? starIcon2 : starIcon)}
+                                    className="favouriteIcon"
+                                    alt="Favourite Icon" // Added alt for accessibility
+                                    />
+                                </button>
+                            </>
                         )}
                     </div>
                 </div>

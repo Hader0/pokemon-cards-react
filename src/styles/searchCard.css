@@ -15,8 +15,9 @@
 
 .titleCard {
     color: #fff;
-    background: #3E48FF;
-    background: linear-gradient(to right, #1064ff 25%, #18c9ff 60%);
+    /* background: #3E48FF; */
+    /* background: linear-gradient(to right, #1064ff 25%, #18c9ff 60%); */
+    background-color: #1a1a1a;
     border-radius: 20px;
     padding: 1rem;
     margin: 2rem;
