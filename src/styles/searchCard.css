@@ -19,14 +19,14 @@
 }
 
 .favouriteCardsButton {
-    background-color: #1a1a1a;
+    background-color: #242424;
     text-align: center;
     font-size: 1.2rem;
     padding: 5px;
     border-radius: 20px;
     border: 1px solid transparent;
     margin-bottom: 0.7rem;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 
     display: flex;
     justify-content: center;
@@ -35,8 +35,10 @@
 
 .favouriteCardsButton:hover {
     border-color: #1a1a1a;
-    transform: scale(1.1);
-    filter: drop-shadow(0px 0px 4px #ffc815);
+    transform: scale(1.3);
+    border: 1px solid transparent;
+
+    /* filter: drop-shadow(0px 0px 4px #ffc815); */
 }
 
 .favouriteCardsButton img {
@@ -249,7 +251,7 @@
     }
     
     .favouriteCardsButton {
-        margin-bottom: 01rem;
+        margin-bottom: 1rem;
     }
 
     /* Title Card */
