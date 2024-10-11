@@ -37,7 +37,7 @@ function CardList({ newCards }) {
                     <h3 className="cardTitle">{card.name}</h3>
 
                     {/* Displaying the Card's Pokemon rarity */}
-                    <h5 className="rarity">{card.rarity}</h5>
+                    <h5 className="rarity">{card.rarity || "Rarity not available"}</h5>
 
                     {/* Displaying the image of the card */}
                     <img src={card.images.small} alt={card.name} />

@@ -29,11 +29,10 @@ function SearchCard() {
         setFilter(event.target.value);
     }
 
-    // Effect to apply the filter on newCards whenever filter changes
     useEffect(() => {
-        if (Array.isArray(newCards) && newCards.length > 0) { // Check if newCards is an array
-            let sortedCards = [...newCards];  
-
+        if (Array.isArray(newCards) && newCards.length > 0) {
+            let sortedCards = [...newCards];
+    
             if (filter === "price") {
                 sortedCards.sort((a, b) => {
                     const priceA = a.cardmarket?.prices?.averageSellPrice || 0;
@@ -41,14 +40,22 @@ function SearchCard() {
                     return priceB - priceA;
                 });
             } else if (filter === "alphabetical") {
-                sortedCards.sort((a, b) => a.name.localeCompare(b.name));
+                sortedCards.sort((a, b) => {
+                    const nameA = a.name || ""; // Fallback to empty string if name is undefined
+                    const nameB = b.name || "";
+                    return nameA.localeCompare(nameB);
+                });
             } else if (filter === "rarity") {
-                sortedCards.sort((a, b) => a.rarity.localeCompare(b.rarity));
+                sortedCards.sort((a, b) => {
+                    const rarityA = a.rarity || ""; // Fallback to empty string if rarity is undefined
+                    const rarityB = b.rarity || "";
+                    return rarityB.localeCompare(rarityA); // Sort by rarity alphabetically
+                });
             }
-
-            setFilteredCards(sortedCards);  
+    
+            setFilteredCards(sortedCards);
         }
-    }, [filter, newCards]); 
+    }, [filter, newCards]);
 
     return (
         <>
